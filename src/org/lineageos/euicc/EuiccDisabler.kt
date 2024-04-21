@@ -16,7 +16,7 @@ object EuiccDisabler {
 
     private val EUICC_DEPENDENCIES = listOf("com.google.android.gms", "com.google.android.gsf")
 
-    private val EUICC_PACKAGES = listOf("com.google.android.euicc", "com.google.android.ims")
+    private val EUICC_PACKAGES = listOf("com.google.android.euicc")
 
     private fun isInstalled(pm: PackageManager, pkgName: String) =
         runCatching {
