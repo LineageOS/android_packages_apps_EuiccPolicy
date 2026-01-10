@@ -51,6 +51,24 @@
       "message": "Lottie animations need to be updated, right now they are oplus branded.",
       "revId": "8e9ce23043c8c45d87b39fad15ceae4697460713",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "63e663ab_d1352951",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 2
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-01-10T22:26:18Z",
+      "side": 1,
+      "message": "What should we do about it, can we overlay them if we want to?",
+      "parentUuid": "de59c792_ad91e11e",
+      "revId": "8e9ce23043c8c45d87b39fad15ceae4697460713",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
     }
   ]
 }
