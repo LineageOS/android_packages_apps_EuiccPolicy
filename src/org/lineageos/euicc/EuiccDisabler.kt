@@ -14,7 +14,7 @@ import android.util.Log
 object EuiccDisabler {
     private const val TAG = "EuiccDisabler"
 
-    private val EUICC_DEPENDENCIES = listOf("com.google.android.gms", "com.google.android.gsf")
+    private val EUICC_DEPENDENCIES = listOf("com.google.android.gms")
 
     private val EUICC_PACKAGES = listOf("com.google.android.euicc")
 
