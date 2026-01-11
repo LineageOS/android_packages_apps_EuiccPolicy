@@ -4,6 +4,11 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <resources>
+    <string name="carrier_list_json" translatable="false"></string>
+    <string name="transfer_carrier_list_json" translatable="false"></string>
+
     <string name="sim_illustration_lottie_mappings_json" translatable="false"></string>
+    <string name="sim_intro_illustration_lottie_mappings_json" translatable="false"></string>
+    <string name="sim_intro_image_mappings_json" translatable="false"></string>
     <string name="sim_slot_mappings_json" translatable="false"></string>
 </resources>
