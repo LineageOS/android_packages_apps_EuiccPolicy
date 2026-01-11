@@ -35,7 +35,8 @@ object EuiccDisabler {
 
     fun enableOrDisableEuicc(context: Context) {
         val pm = context.packageManager
-        val disable = EUICC_DEPENDENCIES.any { !isInstalledAndEnabled(pm, it) }
+        val supportsEuicc = pm.hasSystemFeature(PackageManager.FEATURE_TELEPHONY_EUICC)
+        val disable = !supportsEuicc || EUICC_DEPENDENCIES.any { !isInstalledAndEnabled(pm, it) }
         val flag =
             if (disable) {
                 PackageManager.COMPONENT_ENABLED_STATE_DISABLED
