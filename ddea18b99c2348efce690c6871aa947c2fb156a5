@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "34e158fe_469b6ff1",
+        "filename": "src/org/lineageos/euicc/EuiccDisabler.kt",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 13648
+      },
+      "writtenOn": "2026-10-11T08:34:30Z",
+      "side": 1,
+      "message": "```suggestion\n        val flag \u003d\n            if (!supportsEuicc) {\n```",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 26
+      },
+      "revId": "ddea18b99c2348efce690c6871aa947c2fb156a5",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71"
+    }
+  ]
+}
