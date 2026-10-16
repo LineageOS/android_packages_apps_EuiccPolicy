@@ -9,10 +9,9 @@ import android.content.Context
 import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
 import android.content.pm.PackageManager.ApplicationInfoFlags
+import org.lineageos.euicc.R
 
 object EuiccDisabler {
-    private val EUICC_PACKAGES = listOf("com.google.android.euicc")
-
     private fun isInstalled(pm: PackageManager, pkgName: String) =
         runCatching {
                 val info = pm.getApplicationInfo(pkgName, ApplicationInfoFlags.of(0))
@@ -29,8 +28,13 @@ object EuiccDisabler {
             } else {
                 PackageManager.COMPONENT_ENABLED_STATE_ENABLED
             }
-
-        for (pkg in EUICC_PACKAGES) {
+        val euiccPackages = mutableListOf("com.google.android.euicc").apply {
+            val extraPackages = context.resources.getStringArray(R.array.config_partnerExtraPackages)
+            if (extraPackages.isNotEmpty()) {
+                addAll(extraPackages)
+            }
+        }
+        for (pkg in euiccPackages) {
             if (isInstalled(pm, pkg)) {
                 pm.setApplicationEnabledSetting(pkg, flag, 0)
             }
